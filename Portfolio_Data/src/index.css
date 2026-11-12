@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #e9edfb;
+  background: #100e24;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  --page: #100e24;
+  --surface: #1a1733;
+  --surface-soft: #24203f;
+  --text: #e1dcf8;
+  --text-strong: #f5f2ff;
+  --muted: #aaa2c8;
+  --border: #3a315a;
+  --accent: #aa91ff;
+  --accent-strong: #c1b2ff;
+  --accent-soft: #30274e;
+  --cyan: #55e1e6;
+  --chart-grid: #3c3657;
+  --shadow: 0 16px 48px rgba(0, 0, 0, 0.22);
+  color-scheme: dark;
+}
+
+:root[data-theme='blue'] {
+  color: #e5edff;
+  background: #0e142b;
+  --page: #0e142b;
+  --surface: #151e3b;
+  --surface-soft: #1c294b;
+  --text: #d9e3fb;
+  --text-strong: #f3f6ff;
+  --muted: #a0afcf;
+  --border: #2e3c62;
+  --accent: #8193ff;
+  --accent-strong: #aab5ff;
+  --accent-soft: #242f59;
+  --cyan: #55e1e6;
+  --chart-grid: #344064;
+  --shadow: 0 16px 48px rgba(0, 0, 0, 0.24);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  min-width: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 86px;
+}
+
+body {
+  min-width: 0;
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+}
+
+button,
+input,
+textarea,
+select { font-size: inherit; }
+button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
+button { color: inherit; }
+a { color: inherit; }
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 56%, transparent);
+  outline-offset: 3px;
+}
+
+::selection { color: #fff; background: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
