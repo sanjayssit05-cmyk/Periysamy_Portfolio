@@ -150,12 +150,16 @@ export const monthlyPerformance = [
 
 export const education = [
   {
-    title: 'Add your degree or qualification',
-    organization: 'Institution name',
-    date: 'Year - Year',
-    description:
-      'Replace this placeholder with your qualification, field of study, and any relevant academic highlights.',
-    placeholder: true,
+    title: "Bachelor's Degree",
+    organization: 'Sree Vee Arts and Science College, Dindigul, Thadikombu',
+    date: '',
+    description: 'Qualification: Degree',
+  },
+  {
+    title: 'Data Analyst Course',
+    organization: 'SDLC, Dindigul',
+    date: '',
+    description: 'Course completed',
   },
 ]
 
