@@ -23,6 +23,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import ContactForm from './components/ContactForm.jsx'
 import PortfolioAssistant from './components/PortfolioAssistant.jsx'
 import ProjectCard from './components/ProjectCard.jsx'
+import profileImage from './images/WhatsApp Image 2026-11-13 at 10.41.42 AM.jpeg'
 import SectionHeading from './components/SectionHeading.jsx'
 import {
   certifications,
@@ -170,8 +171,9 @@ function Hero({ onDownloadResume, typingText }) {
         <div className="profile-card">
           <div className="profile-card-header"><span>ANALYST PROFILE</span><span className="profile-live"><i /> AVAILABLE</span></div>
           <div className="profile-main">
-            <div className="profile-avatar" role="img" aria-label="Initials AP - replace with a professional portrait">
-              <span>AP</span><i><FiCheck /></i>
+            <div className="profile-avatar">
+              <img src={profileImage} alt="A. Periyasamy" />
+              <i><FiCheck /></i>
             </div>
             <div><h3>A. Periyasamy</h3><p>Data Analyst</p></div>
           </div>
